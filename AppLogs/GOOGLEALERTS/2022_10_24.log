@@ -1,0 +1,3 @@
+2022-10-24 08:25:00,899: __main__.__main__-load_data-INFO ==> GOOGLEALERTS with (50, 13) loaded to warehouse sucessfully
+2022-10-24 08:25:03,468: __main__.__main__-load_data-INFO ==> Mail to the delivery list ['kdb081293@gmail.com'] successfully tiggered
+2022-10-24 08:25:03,469: __main__.__main__-load_data-INFO ==> Local stage directory removed successfully

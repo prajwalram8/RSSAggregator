@@ -1,0 +1,83 @@
+<html lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    <div align="center">
+      <div style="width:100%;max-width:650px">
+        <div style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+          <table style="border-collapse:collapse;border-left:1px solid #0D0D0D;border-right:1px solid #0D0D0D">
+            <tr>
+              <td style="background-color:#0D0D0D;padding-left:18px;border-bottom:1px solid #0D0D0D;border-top:1px solid #0D0D0D"></td>
+              <td valign="middle" style="padding:13px 10px 8px 0px;background-color:#0D0D0D;border-top:1px solid #0D0D0D;border-bottom:1px solid #0D0D0D">
+                <a href="https://gagroup.net">
+                  <img src="https://gagroup.net/wp-content/uploads/2022/10/GAG-EnhancedLogo.svg" alt="Ghassan Aboud Group" border="0" height="25">
+                </a>
+              </td>
+              <td style="background-color:#0D0D0D;padding-left:18px;border-top:1px solid #0D0D0D;border-bottom:1px solid #0D0D0D"></td>
+            </tr>
+            <tr>
+              <td style="padding-left:32px"></td>
+              <td style="padding:18px 0px 0px 0px;vertical-align:middle;line-height:20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                <span style="color:#262626;font-size:22px"> {{ theme }} </span>
+                <div style="vertical-align:top;padding-top:6px;color:#aaa;font-size:12px;line-height:16px">
+                  <span>Daily update</span>
+                  <span style="padding:0px 4px 0px 4px">⋅</span>
+                  <a style="color:#aaa;text-decoration:none">{{ today_date }}</a>
+                </div>
+              </td>
+              <td style="padding-left:32px"></td>
+            </tr>
+            <tr>
+              <td style="padding-left:18px"></td>
+              <td style="padding:16px 0px 12px 0px;border-bottom:1px solid #e4e4e4">
+                <span style="font-size:12px;color:#737373"> NEWS </span>
+              </td>
+              <td style="padding-right:18px"></td>
+            </tr>
+            {% for item in items %}
+            <tr itemscope="" itemtype="http://schema.org/Article">
+                <td style="padding-left:18px"></td>
+                <td style="padding:18px 0px 12px 0px;vertical-align:top;border-top:1px solid #e4e4e4;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                  <a></a>
+                  <div>
+                    <span style="padding:0px 6px 0px 0px">
+                      <a href="{{ '%s'%item.link }}" itemprop="url" style="color:#427fed;display:inline;text-decoration:none;font-size:16px;line-height:20px">
+                        <span itemprop="name">{{ item.title }}</span>
+                      </a>
+                    </span>
+                    <div>
+                      <div style="padding:2px 0px 8px 0px">
+                        <div itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization" style="color:#737373;font-size:12px">
+                          <a style="text-decoration:none;color:#737373">
+                            <span itemprop="name">{{ item.domain_name }}</span>
+                          </a>
+                        </div>
+                        <div itemprop="description" style="color:#252525;padding:2px 0px 0px 0px;font-size:12px;line-height:18px"> {{ item.summary }} </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td style="padding-right:18px"></td>
+              </tr>
+            {% endfor %}
+            <td style="padding-right:18px"></td>
+            <tr>
+              <td colspan="3" valign="middle" style="background-color:#0D0D0D;font-size:14px;vertical-align:middle;text-align:center;padding:10px 10px 10px 10px;line-height:20px;border:1px solid #0D0D0D;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                <a href="mailto: prajwal.g@gagroup.net" style="text-decoration:none;vertical-align:middle;color:#F2CE16">Share Feedback</a>
+              </td>
+            </tr>
+          </table>
+          <table style="padding-top:6px;font-size:12px;color:#252525;text-align:center;width:100%">
+            <tr>
+              <td style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"> You have received this email because you have subscribed to <b>Market Intelligence Alerts</b>. <div>
+                  <a href="mailto: prajwal.g@gagroup.net" style="text-decoration:none;color:#427fed">Unsubscribe</a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

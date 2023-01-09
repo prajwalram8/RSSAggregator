@@ -1,0 +1,2 @@
+,stage,status,rows_parsed,rows_loaded,error_limit,errors_seen,first_error,first_error_line,first_error_character,first_error_column_name,Load_status,sq_start,sq_end
+0,data_stage_googlealerts/GOOGLEALERTS_October_24_2022.csv.gz,LOADED,50,50,1,0,,,,,Successful,2022-10-24,2022-10-24
